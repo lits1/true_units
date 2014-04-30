@@ -1,3 +1,79 @@
 = TrueUnits
 
-This project rocks and uses MIT-LICENSE.
+The TrueUnits gem provides a simple way to display correct suffix for numerical {???}.
+
+It's most important for russian, ukrainian, etc. languages.
+
+=== Examples
+
+ 1 день, 2 дня, 25 дней
+
+ 1 дерево, 2 дерева, 25 деревьев.
+
+
+== Installation
+
+Add one string to the <b>Gemfile</b>
+
+ gem 'true_units'
+
+and run 
+ bundle install
+
+== Usage
+
+It's very simple.
+
+If you need a correct translation for <b>hours</b> then you should add few lines to your locale yml file under the <b>true_units</b> key
+
+  true_units:
+    hours:
+      v1: час
+      v2: часа
+      v3: часов
+
+So now you can write 
+ foo.tu_hours
+where foo is a numerical variable.
+
+=== More examples:
+
+    true_units:
+      minutes:
+        v1: минута
+        v2: минуты
+        v3: минут
+      seconds:
+        v1: секунда
+        v2: секунды
+        v3: секунд
+      days:
+        v1: день
+        v2: дня
+        v3: дней
+      wins:
+        v1: победа
+        v2: победы
+        v3: побед
+      guards:
+        v1: охранник
+        v2: охранника
+        v3: охранников
+      tickets:
+        v1: билет
+        v2: билета
+        v3: билетов
+
+=== usage
+
+  puts 1.tu_guards
+  puts 34.tu_tickets
+  puts 7.tu_days
+
+== Author
+
+Alexander Dedusenko
+
+== Copyright
+
+This gem is released under the MIT License.
