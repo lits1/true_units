@@ -1,6 +1,6 @@
 = TrueUnits
 
-The TrueUnits gem provides a simple way to display correct suffix for numerical {???}.
+The TrueUnits gem provides a simple way to display correct suffix for a noun depending on the number.
 
 It's most important for russian, ukrainian, etc. languages.
 
