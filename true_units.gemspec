@@ -9,15 +9,15 @@ Gem::Specification.new do |s|
   s.version     = TrueUnits::VERSION
   s.authors     = ["Alexander Dedusenko"]
   s.email       = ["lex@logicitstaff.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TrueUnits."
-  s.description = "TODO: Description of TrueUnits."
+  s.homepage    = "https://github.com/lits1/true_units"
+  s.summary     = "The TrueUnits gem provides a simple way to display correct suffix for a noun depending on the number."
+  s.description = ""
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.0"
+  s.add_dependency "rails"
+  s.add_dependency "i18n"
 
-  s.add_development_dependency "sqlite3"
 end
