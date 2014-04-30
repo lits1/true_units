@@ -20,6 +20,8 @@ Add one string to the <b>Gemfile</b>
 and run 
  bundle install
 
+Don't forget to restart your server.
+
 == Usage
 
 It's very simple.
